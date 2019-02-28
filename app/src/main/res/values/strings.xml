@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EyeDentify</string>
+    <string name="title_activity_identify">Identify</string>
+    <string name="title_activity_find_image">FindImage</string>
+</resources>
