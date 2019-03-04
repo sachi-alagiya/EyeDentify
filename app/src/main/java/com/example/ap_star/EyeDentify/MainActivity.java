@@ -25,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+	
+	
+	protected void onCameraClick(Bundle savedInstanceState) {
+			
+			
+	}
 
 }
 
