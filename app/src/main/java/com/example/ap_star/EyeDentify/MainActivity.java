@@ -22,15 +22,16 @@ public class MainActivity extends AppCompatActivity {
 
         imageView.setImageBitmap(mBitmap);
 
-
+	System.out.println("End of onCreate");
 
     }
 	
 	
-	protected void onCameraClick(Bundle savedInstanceState) {
+protected void onCameraClick(Bundle savedInstanceState) {
+		
+System.out.println("End of onCameraClick");
 			
-			
-	}
+}
 
 }
 
