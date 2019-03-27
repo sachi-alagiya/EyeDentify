@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Bitmap mBitmap= BitmapFactory.decodeResource(getResources(),R.drawable.statue);
-        ImageView imageView=(ImageView)findViewById(R.id.imageView);
-        Button btnProcess=(Button)findViewById(R.id.btnProcess);
+       // Bitmap mBitmap= BitmapFactory.decodeResource(getResources(),R.drawable.statue);
+      //  ImageView imageView=(ImageView)findViewById(R.id.imageView);
+       // Button btnProcess=(Button)findViewById(R.id.btnProcess);
 
-        imageView.setImageBitmap(mBitmap);
+       // imageView.setImageBitmap(mBitmap);
 
 
 
