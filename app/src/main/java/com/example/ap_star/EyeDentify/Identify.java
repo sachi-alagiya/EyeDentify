@@ -1,11 +1,10 @@
 package com.example.ap_star.EyeDentify;
 
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class Identify extends AppCompatActivity {
 
@@ -13,18 +12,25 @@ public class Identify extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_identify);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
+        Button bt_cam=(Button)findViewById(R.id.btn_camera);
+        Button bt_gal=(Button)findViewById(R.id.btn_gallery);
+
+        bt_cam.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent int1=new Intent(Identify.this ,Result.class);
+                startActivity(int1);
             }
         });
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        bt_gal.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent int2=new Intent(Identify.this ,Result.class);
+                startActivity(int2);
+            }
+        });
+
     }
+
 
 }
