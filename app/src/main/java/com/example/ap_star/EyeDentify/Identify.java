@@ -26,7 +26,7 @@ public class Identify extends AppCompatActivity {
 
         bt_cam.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent int1=new Intent(Identify.this ,cameraTest.class);
+                Intent int1=new Intent(Identify.this ,CameraActivity.class);
                 startActivity(int1);
             }
         });
