@@ -21,6 +21,9 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
+		// new line
+
+
         assertEquals("com.example.ap_star.EyeDentify", appContext.getPackageName());
     }
 }
